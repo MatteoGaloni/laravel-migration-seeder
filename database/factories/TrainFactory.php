@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -20,9 +21,9 @@ class TrainFactory extends Factory
         return [
             "azienda" => fake()->company,
             "stazione_di_partenza" => fake()->city(),
-            "stazione_di_arrivo" => "stazione" . fake()->city(),
-            "orario_di_partenza" => fake()->dateTime(now()->addHours(8)),
-            "orario_di_arrivo" => fake()->dateTime(now()->addHours(13)),
+            "stazione_di_arrivo" => fake()->city(),
+            "orario_di_partenza" => Carbon::now(),
+            "orario_di_arrivo" => Carbon::now(),
             "codice_treno" => Str::random(7),
             "numero_carrozze" => random_int(1, 20),
             "in_orario" => fake()->boolean,
