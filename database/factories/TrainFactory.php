@@ -19,11 +19,11 @@ class TrainFactory extends Factory
     public function definition()
     {
         return [
-            "azienda" => fake()->company,
+            "azienda" => fake()->company(),
             "stazione_di_partenza" => fake()->city(),
             "stazione_di_arrivo" => fake()->city(),
-            "orario_di_partenza" => Carbon::now()->addHours(rand(0, 13)),
-            "orario_di_arrivo" => Carbon::now()->addHours(rand(13, 24)),
+            "orario_di_partenza" => Carbon::parse(now())->format('H:i:s'),
+            "orario_di_arrivo" => Carbon::parse(now())->format('H:i:s'),
             "codice_treno" => Str::random(7),
             "numero_carrozze" => random_int(1, 20),
             "in_orario" => fake()->boolean,
