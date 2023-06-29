@@ -27,20 +27,17 @@
                         <div class="card-title">
                             <h3>Numero di carrozze: {{ $train->numero_carrozze }}</h3>
                         </div>
-                        @if ($train->in_orario == 1)
+                        @if ($train->in_orario === 1)
                             <div class="card-title">
                                 <h3>Treno in orario: SI</h3>
                             </div>
-                        @else
                             <div class="card-title">
-                                <h3>Treno in orario: SI</h3>
-                            </div>
-                        @endif
-                        @if ($train->cancellato == 1)
-                            <div class="card-title">
-                                <h3>Cancellato: SI</h3>
+                                <h3>Cancellato: No</h3>
                             </div>
                         @else
+                            <div class="card-title">
+                                <h3>Treno in orario: NO</h3>
+                            </div>
                             <div class="card-title">
                                 <h3>Cancellato: SI</h3>
                             </div>
