@@ -1,1 +1,3 @@
-<footer class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</footer>
+<footer class="p-3">
+    <h2 class="text-center">Puntualmente in ritardo</h2>
+</footer>
