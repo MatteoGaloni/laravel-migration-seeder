@@ -12,7 +12,6 @@
                         <div class="card-body">
                             <div class="card-title d-flex justify-content-between">
                                 <h5>Stazione di Partenza: {{ $train->stazione_di_partenza }}</h5>
-                                <br>
                                 <h5>Stazione di Arrivo: {{ $train->stazione_di_arrivo }}</h5>
                             </div>
                             <div class="card-title d-flex justify-content-between">
