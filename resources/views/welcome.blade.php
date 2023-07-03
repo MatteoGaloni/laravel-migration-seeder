@@ -24,13 +24,13 @@
                             </div>
                             @if ($train->in_orario === 1)
                                 <div class="card-title d-flex justify-content-between">
-                                    <h5>Treno in orario: SI</h5>
+                                    <h5>Treno in orario: Si</h5>
                                     <h5>Cancellato: No</h5>
                                 </div>
                             @else
                                 <div class="card-title d-flex justify-content-between">
-                                    <h5>Treno in orario: NO</h5>
-                                    <h5>Cancellato: SI</h5>
+                                    <h5>Treno in orario: No</h5>
+                                    <h5>Cancellato: Si</h5>
                                 </div>
                             @endif
                         </div>

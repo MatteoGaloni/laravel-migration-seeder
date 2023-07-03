@@ -25,7 +25,7 @@ class TrainFactory extends Factory
             "orario_di_partenza" => fake()->time(),
             "orario_di_arrivo" => fake()->time(),
             "codice_treno" => Str::random(7),
-            "numero_carrozze" => random_int(1, 20),
+            "numero_carrozze" => fake()->randomNumber(2, true),
             "in_orario" => fake()->boolean,
             "cancellato" => fake()->boolean,
         ];
